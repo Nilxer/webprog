@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ba2052e-5ddf-4d33-b930-5c0b2f545e7d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_activation_jakarta_activation_1_2_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/webprog.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webprog.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_json_json_20190722.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dhbw/WebService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dhbw/WebService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dhbw/ws/PlainWs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dhbw/ws/ShortWs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dhbw/ws/ShortWs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dhbw/ws/ShortWs.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,6 +86,14 @@
       <updated>1582038287001</updated>
       <workItem from="1582038288775" duration="3241000" />
     </task>
+    <task id="LOCAL-00001" summary="Backend Aktualisierung">
+      <created>1585562356768</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1585562356769</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -99,26 +102,38 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Backend Aktualisierung" />
+    <option name="LAST_COMMIT_MESSAGE" value="Backend Aktualisierung" />
+  </component>
   <component name="WindowStateProjectService">
-    <state width="1237" height="163" key="GridCell.Tab.0.bottom" timestamp="1585562260468">
+    <state x="193" y="0" key="CommitChangelistDialog2" timestamp="1585566698566">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="163" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1585562260468" />
-    <state width="1237" height="163" key="GridCell.Tab.0.center" timestamp="1585562260468">
+    <state x="193" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1585566698566" />
+    <state width="1237" height="163" key="GridCell.Tab.0.bottom" timestamp="1585566699925">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="163" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1585562260468" />
-    <state width="1237" height="163" key="GridCell.Tab.0.left" timestamp="1585562260468">
+    <state width="1237" height="163" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1585566699925" />
+    <state width="1237" height="163" key="GridCell.Tab.0.center" timestamp="1585566699925">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="163" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1585562260467" />
-    <state width="1237" height="163" key="GridCell.Tab.0.right" timestamp="1585562260468">
+    <state width="1237" height="163" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1585566699925" />
+    <state width="1237" height="163" key="GridCell.Tab.0.left" timestamp="1585566699925">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1585562260468" />
+    <state width="1237" height="163" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1585566699925" />
+    <state width="1237" height="163" key="GridCell.Tab.0.right" timestamp="1585566699925">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1585566699925" />
     <state x="142" y="0" key="SettingsEditor" timestamp="1585562095471">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1585562095471" />
+    <state x="233" y="73" key="Vcs.Push.Dialog.v2" timestamp="1585566687616">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="233" y="73" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1585566687616" />
   </component>
 </project>

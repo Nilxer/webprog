@@ -5,6 +5,7 @@ import java.util.HashMap;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
+import javax.ws.rs.DELETE;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
@@ -80,6 +81,16 @@ public class ShortWs {
     }
     URI targetURIForRedirection = new URI(longUrl);
     return Response.seeOther(targetURIForRedirection).build();
+  }
+
+  @DELETE
+  @Path("/short/{shortId}")
+  public Response deleteShortUrl(@PathParam("shortId") String shortId){
+    String shortUrl = baseUrl + shortId;
+    if (urlMapping.containsKey(shortUrl)) {
+      urlMapping.remove(shortUrl);
+    }
+    return Response.ok().build();
   }
 
 }
