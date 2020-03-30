@@ -1,8 +1,6 @@
 package com.dhbw;
 
-import com.dhbw.ws.JSONWs;
-import com.dhbw.ws.PlainWs;
-import com.dhbw.ws.TinyWs;
+import com.dhbw.ws.ShortWs;
 import io.dropwizard.Application;
 import io.dropwizard.assets.AssetsBundle;
 import io.dropwizard.setup.Bootstrap;
@@ -29,14 +27,13 @@ public class WebService extends Application<WebServiceConfiguration>
 
   @Override
   public void run(
-    WebServiceConfiguration config,
-    Environment environment) throws Exception
+          WebServiceConfiguration config,
+          Environment environment) throws Exception
   {
-    //environment.jersey().register(new JSONWs());
-    environment.jersey().register(new PlainWs());
-    //environment.jersey().register(new TinyWs());
+    environment.jersey().register(new ShortWs());
 
     final WSHealthCheck healthCheck = new WSHealthCheck();
     environment.healthChecks().register("template", healthCheck);
   }
 }
+
