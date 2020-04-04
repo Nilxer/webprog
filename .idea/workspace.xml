@@ -20,6 +20,7 @@
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
+        <option value="bowlen &lt;philipp.bohlen@web.de&gt;" />
         <option value="bowlen" />
       </list>
     </option>
@@ -130,11 +131,11 @@
     <option name="LAST_COMMIT_MESSAGE" value="Frontend erster Entwurf" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="217" y="23" key="CommitChangelistDialog2" timestamp="1585996463307">
+    <state x="217" y="23" key="CommitChangelistDialog2" timestamp="1585996605314">
       <screen x="0" y="23" width="1440" height="827" />
     </state>
     <state x="193" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1585566698566" />
-    <state x="217" y="23" key="CommitChangelistDialog2/0.23.1440.827@0.23.1440.827" timestamp="1585996463307" />
+    <state x="217" y="23" key="CommitChangelistDialog2/0.23.1440.827@0.23.1440.827" timestamp="1585996605314" />
     <state width="1237" height="163" key="GridCell.Tab.0.bottom" timestamp="1585566699925">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -156,10 +157,10 @@
     </state>
     <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1585562095471" />
     <state x="160" y="23" key="SettingsEditor/0.23.1440.827@0.23.1440.827" timestamp="1585996531280" />
-    <state x="262" y="112" key="Vcs.Push.Dialog.v2" timestamp="1585995954982">
+    <state x="262" y="112" key="Vcs.Push.Dialog.v2" timestamp="1585996732071">
       <screen x="0" y="23" width="1440" height="827" />
     </state>
     <state x="233" y="73" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1585566687616" />
-    <state x="262" y="112" key="Vcs.Push.Dialog.v2/0.23.1440.827@0.23.1440.827" timestamp="1585995954981" />
+    <state x="262" y="112" key="Vcs.Push.Dialog.v2/0.23.1440.827@0.23.1440.827" timestamp="1585996732071" />
   </component>
 </project>
