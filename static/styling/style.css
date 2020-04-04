@@ -1,0 +1,138 @@
+html {
+    margin: 0;
+    padding: 0;
+    background: rgb(49,96,199);
+    background: linear-gradient(135deg, rgb(110, 148, 230) 0%, rgba(208,208,255,1) 50%, rgba(255,255,255,1) 100%);
+}
+
+p, a, li, th, td{
+    font-family:'Montserrat', sans-serif;
+    font-weight: 500;
+    color: #0c0808;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    padding:15px;
+    top:0;
+    left:0;
+    text-align: center;
+    background: #3160c7;
+    height: 75px;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.8)}
+
+body{
+    padding-top: 130px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer{
+    width: 100%;
+    background: #3160c7;
+    height: 50px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.8);
+    text-align: center;
+}
+
+footer a{
+    color: white;
+    position: relative;
+    top: 15px;
+    padding-left: 120px;
+    padding-right: 120px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1vw;
+}
+
+#logo {
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#logo img{
+    width: 100%;
+}
+
+#shortener{
+    background: #b9b9b941;
+    height: 50px;
+    border-radius: 40px;
+    padding: 10px;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.8)
+}
+
+#shortener-input{
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    color: white;
+    font-size: 1vw;
+    line-height: 40px;
+    width: 80%;
+    padding-left: 10px;
+    font-weight: bold;
+}
+
+#shortener-input::placeholder {
+    color: white;
+    opacity: 1;
+}
+
+#shortener-button{
+    float: right;
+    width: 15%;
+    height: 50px;
+    border-radius: 50px;
+    background: #3160c7;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+    border-style: solid;
+    border-color: #a1a1a1;
+    font-size: 1vw;
+    font-weight: bold;
+}
+
+#shortener-button:hover{
+    background: #162a57;
+    color: #fff;
+}
+
+#overview{
+    background: #b9b9b941;
+    height: 500px;
+    border-radius: 40px;
+    margin-top: 10px;
+    padding: 20px;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.8)}
+
+table {
+    border-collapse: separate;
+    border-spacing: 3;
+    width: 100%;
+    overflow-y:auto;
+    min-height: 100%;
+    border-radius: 40px;
+}
+
+th, td{
+     text-align: left;
+     padding: 8px;
+     color: white;
+}
+
+th{
+     font-weight: bold;
+}
+
+
