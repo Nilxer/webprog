@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ba2052e-5ddf-4d33-b930-5c0b2f545e7d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_json_json_20190722.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/scripts/script.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/styling/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dhbw/ws/ShortWs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dhbw/ws/ShortWs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/htmldocs/index.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,7 +18,19 @@
     <favorites_list name="webprog" />
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="bowlen" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="hiddenUrls">
+      <set>
+        <option value="https://github.com/Nilxer/webprog.git" />
+      </set>
+    </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
@@ -51,7 +66,12 @@
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="JarApplication">
@@ -87,7 +107,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585562356769</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Test Commit">
+      <created>1585995851030</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1585995851030</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -98,13 +125,16 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Backend Aktualisierung" />
-    <option name="LAST_COMMIT_MESSAGE" value="Backend Aktualisierung" />
+    <MESSAGE value="Test Commit" />
+    <MESSAGE value="Frontend erster Entwurf" />
+    <option name="LAST_COMMIT_MESSAGE" value="Frontend erster Entwurf" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="193" y="0" key="CommitChangelistDialog2" timestamp="1585566698566">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state x="217" y="23" key="CommitChangelistDialog2" timestamp="1585996463307">
+      <screen x="0" y="23" width="1440" height="827" />
     </state>
     <state x="193" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1585566698566" />
+    <state x="217" y="23" key="CommitChangelistDialog2/0.23.1440.827@0.23.1440.827" timestamp="1585996463307" />
     <state width="1237" height="163" key="GridCell.Tab.0.bottom" timestamp="1585566699925">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -121,13 +151,15 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state width="1237" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1585566699925" />
-    <state x="142" y="0" key="SettingsEditor" timestamp="1585562095471">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state x="160" y="23" key="SettingsEditor" timestamp="1585996531280">
+      <screen x="0" y="23" width="1440" height="827" />
     </state>
     <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1585562095471" />
-    <state x="233" y="73" key="Vcs.Push.Dialog.v2" timestamp="1585566687616">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state x="160" y="23" key="SettingsEditor/0.23.1440.827@0.23.1440.827" timestamp="1585996531280" />
+    <state x="262" y="112" key="Vcs.Push.Dialog.v2" timestamp="1585995954982">
+      <screen x="0" y="23" width="1440" height="827" />
     </state>
     <state x="233" y="73" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1585566687616" />
+    <state x="262" y="112" key="Vcs.Push.Dialog.v2/0.23.1440.827@0.23.1440.827" timestamp="1585995954981" />
   </component>
 </project>
