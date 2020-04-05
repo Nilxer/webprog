@@ -11,13 +11,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!-- Custom Style Sheet -->
-  <link rel="stylesheet" type="text/css" href="./styling/style.css">
+  <link rel="stylesheet" type="text/css" href="../styling/style.css">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 
   <!--Custom Scripts-->
-  <script src="./scripts/script.js"></script>
+  <script src="../scripts/script.js"></script>
 </head>
 
 <body>
@@ -25,14 +25,16 @@
   <header>
     <div id="logo">
       <a href="#">
-        <img src="./img/logo.png" alt="Logo">
+        <img src="../img/logo.png" alt="Logo">
       </a>
     </div>
   </header>
 
   <div id="shortener">
+    <form action ="http://localhost:8080/api/short/createShortUrl" method="POST">
     <input id="shortener-input" type="text" placeholder="Paste your long URL here" aria-label="LongURL">
-    <button id="shortener-button" type="button" onclick="shorten()">SHORTEN ME</button>
+    <input id="shortener-button" type="submit" value="Shorten Me"/>
+    </form>
   </div>
 
   <div id="overview">

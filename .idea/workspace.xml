@@ -2,12 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ba2052e-5ddf-4d33-b930-5c0b2f545e7d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/static/img/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/scripts/script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/styling/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/htmldocs/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dependency-reduced-pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dependency-reduced-pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dhbw/ws/ShortWs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dhbw/ws/ShortWs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/htmldocs/img/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/htmldocs/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/scripts/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/htmldocs/scripts/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/styling/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/htmldocs/styling/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,16 +62,20 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1582041466614" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/static" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.build.tools" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/static" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/static/htmldocs" />
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
@@ -84,13 +89,12 @@
     <configuration name="start webprog" type="JarApplication">
       <option name="JAR_PATH" value="$PROJECT_DIR$/target/webprog-0.1.0-SNAPSHOT.jar" />
       <option name="PROGRAM_PARAMETERS" value="server config.yml" />
-      <option name="WORKING_DIRECTORY" value="C:\Users\baumecke\DHBW\2020\lab\webprog" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <method v="2" />
     </configuration>
   </component>
   <component name="SvnConfiguration">
-    <configuration />
+    <configuration>$USER_HOME$/.subversion</configuration>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -115,7 +119,21 @@
       <option name="project" value="LOCAL" />
       <updated>1585995851030</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Frontend erster Entwurf">
+      <created>1585996863659</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1585996863659</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Frontend erster Entwurf">
+      <created>1585997065967</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1585997065967</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -131,40 +149,60 @@
     <option name="LAST_COMMIT_MESSAGE" value="Frontend erster Entwurf" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="217" y="23" key="CommitChangelistDialog2" timestamp="1585996605314">
+    <state x="286" y="102" key="#Servers" timestamp="1586084508662">
+      <screen x="0" y="23" width="1440" height="827" />
+    </state>
+    <state x="286" y="102" key="#Servers/0.23.1440.827@0.23.1440.827" timestamp="1586084508662" />
+    <state x="151" y="98" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586081218977">
+      <screen x="0" y="23" width="1440" height="827" />
+    </state>
+    <state x="151" y="98" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.827@0.23.1440.827" timestamp="1586081218977" />
+    <state x="404" y="246" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1586081462704">
+      <screen x="0" y="23" width="1440" height="827" />
+    </state>
+    <state x="404" y="246" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1440.827@0.23.1440.827" timestamp="1586081462704" />
+    <state x="217" y="23" key="CommitChangelistDialog2" timestamp="1586085000908">
       <screen x="0" y="23" width="1440" height="827" />
     </state>
     <state x="193" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1585566698566" />
-    <state x="217" y="23" key="CommitChangelistDialog2/0.23.1440.827@0.23.1440.827" timestamp="1585996605314" />
-    <state width="1237" height="163" key="GridCell.Tab.0.bottom" timestamp="1585566699925">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state x="217" y="23" key="CommitChangelistDialog2/0.23.1440.827@0.23.1440.827" timestamp="1586085000908" />
+    <state width="665" height="213" key="GridCell.Tab.0.bottom" timestamp="1586085000933">
+      <screen x="0" y="23" width="1440" height="827" />
     </state>
     <state width="1237" height="163" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1585566699925" />
-    <state width="1237" height="163" key="GridCell.Tab.0.center" timestamp="1585566699925">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state width="665" height="213" key="GridCell.Tab.0.bottom/0.23.1440.827@0.23.1440.827" timestamp="1586085000933" />
+    <state width="665" height="213" key="GridCell.Tab.0.center" timestamp="1586085000932">
+      <screen x="0" y="23" width="1440" height="827" />
     </state>
     <state width="1237" height="163" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1585566699925" />
-    <state width="1237" height="163" key="GridCell.Tab.0.left" timestamp="1585566699925">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state width="665" height="213" key="GridCell.Tab.0.center/0.23.1440.827@0.23.1440.827" timestamp="1586085000932" />
+    <state width="665" height="213" key="GridCell.Tab.0.left" timestamp="1586085000931">
+      <screen x="0" y="23" width="1440" height="827" />
     </state>
     <state width="1237" height="163" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1585566699925" />
-    <state width="1237" height="163" key="GridCell.Tab.0.right" timestamp="1585566699925">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state width="665" height="213" key="GridCell.Tab.0.left/0.23.1440.827@0.23.1440.827" timestamp="1586085000931" />
+    <state width="665" height="213" key="GridCell.Tab.0.right" timestamp="1586085000932">
+      <screen x="0" y="23" width="1440" height="827" />
     </state>
     <state width="1237" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1585566699925" />
+    <state width="665" height="213" key="GridCell.Tab.0.right/0.23.1440.827@0.23.1440.827" timestamp="1586085000932" />
     <state x="534" y="154" key="RollbackChangesDialog" timestamp="1585996834372">
       <screen x="0" y="23" width="1440" height="827" />
     </state>
     <state x="534" y="154" key="RollbackChangesDialog/0.23.1440.827@0.23.1440.827" timestamp="1585996834372" />
-    <state x="160" y="23" key="SettingsEditor" timestamp="1585996531280">
+    <state x="160" y="23" key="SettingsEditor" timestamp="1586084344967">
       <screen x="0" y="23" width="1440" height="827" />
     </state>
     <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1585562095471" />
-    <state x="160" y="23" key="SettingsEditor/0.23.1440.827@0.23.1440.827" timestamp="1585996531280" />
-    <state x="262" y="112" key="Vcs.Push.Dialog.v2" timestamp="1585996732071">
+    <state x="160" y="23" key="SettingsEditor/0.23.1440.827@0.23.1440.827" timestamp="1586084344967" />
+    <state x="262" y="112" key="Vcs.Push.Dialog.v2" timestamp="1585997086469">
       <screen x="0" y="23" width="1440" height="827" />
     </state>
     <state x="233" y="73" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1585566687616" />
-    <state x="262" y="112" key="Vcs.Push.Dialog.v2/0.23.1440.827@0.23.1440.827" timestamp="1585996732071" />
+    <state x="262" y="112" key="Vcs.Push.Dialog.v2/0.23.1440.827@0.23.1440.827" timestamp="1585997086469" />
+    <state x="351" y="174" width="670" height="676" key="search.everywhere.popup" timestamp="1586084329016">
+      <screen x="0" y="23" width="1440" height="827" />
+    </state>
+    <state x="351" y="174" width="670" height="676" key="search.everywhere.popup/0.23.1440.827@0.23.1440.827" timestamp="1586084329016" />
   </component>
 </project>
