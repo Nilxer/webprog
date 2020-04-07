@@ -9,3 +9,7 @@ function contact() {
 function shorten(){
     alert("This button looks nice, but doesn't work yet.")
 }
+
+function godown(){
+      window.location.href="#sec2";
+}

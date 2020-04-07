@@ -3,12 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="3ba2052e-5ddf-4d33-b930-5c0b2f545e7d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dependency-reduced-pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dependency-reduced-pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dhbw/ws/ShortWs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dhbw/ws/ShortWs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/htmldocs/img/logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/htmldocs/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/scripts/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/htmldocs/scripts/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/styling/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/htmldocs/styling/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/htmldocs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/htmldocs/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/htmldocs/scripts/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/htmldocs/scripts/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/htmldocs/styling/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/htmldocs/styling/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +55,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -133,7 +131,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585997065967</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Fix: &quot;static&quot; directory Struktur funktionsfähig&#10;Feat: &quot;Shorten&quot; Button ruft API auf, jedoch noch nicht funktionsfähig (&quot;HTTP method POST is not supported by this URL&quot;)">
+      <created>1586085046297</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1586085046297</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -142,11 +147,56 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="origin/master" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="master" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Backend Aktualisierung" />
     <MESSAGE value="Test Commit" />
     <MESSAGE value="Frontend erster Entwurf" />
-    <option name="LAST_COMMIT_MESSAGE" value="Frontend erster Entwurf" />
+    <MESSAGE value="Fix: &quot;static&quot; directory Struktur funktionsfähig&#10;Feat: &quot;Shorten&quot; Button ruft API auf, jedoch noch nicht funktionsfähig (&quot;HTTP method POST is not supported by this URL&quot;)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix: &quot;static&quot; directory Struktur funktionsfähig&#10;Feat: &quot;Shorten&quot; Button ruft API auf, jedoch noch nicht funktionsfähig (&quot;HTTP method POST is not supported by this URL&quot;)" />
   </component>
   <component name="WindowStateProjectService">
     <state x="286" y="102" key="#Servers" timestamp="1586084508662">
@@ -161,31 +211,31 @@
       <screen x="0" y="23" width="1440" height="827" />
     </state>
     <state x="404" y="246" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1440.827@0.23.1440.827" timestamp="1586081462704" />
-    <state x="217" y="23" key="CommitChangelistDialog2" timestamp="1586085000908">
+    <state x="217" y="23" key="CommitChangelistDialog2" timestamp="1586085045908">
       <screen x="0" y="23" width="1440" height="827" />
     </state>
     <state x="193" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1585566698566" />
-    <state x="217" y="23" key="CommitChangelistDialog2/0.23.1440.827@0.23.1440.827" timestamp="1586085000908" />
-    <state width="665" height="213" key="GridCell.Tab.0.bottom" timestamp="1586085000933">
+    <state x="217" y="23" key="CommitChangelistDialog2/0.23.1440.827@0.23.1440.827" timestamp="1586085045908" />
+    <state width="698" height="213" key="GridCell.Tab.0.bottom" timestamp="1586262053635">
       <screen x="0" y="23" width="1440" height="827" />
     </state>
     <state width="1237" height="163" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1585566699925" />
-    <state width="665" height="213" key="GridCell.Tab.0.bottom/0.23.1440.827@0.23.1440.827" timestamp="1586085000933" />
-    <state width="665" height="213" key="GridCell.Tab.0.center" timestamp="1586085000932">
+    <state width="698" height="213" key="GridCell.Tab.0.bottom/0.23.1440.827@0.23.1440.827" timestamp="1586262053635" />
+    <state width="698" height="213" key="GridCell.Tab.0.center" timestamp="1586262053635">
       <screen x="0" y="23" width="1440" height="827" />
     </state>
     <state width="1237" height="163" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1585566699925" />
-    <state width="665" height="213" key="GridCell.Tab.0.center/0.23.1440.827@0.23.1440.827" timestamp="1586085000932" />
-    <state width="665" height="213" key="GridCell.Tab.0.left" timestamp="1586085000931">
+    <state width="698" height="213" key="GridCell.Tab.0.center/0.23.1440.827@0.23.1440.827" timestamp="1586262053635" />
+    <state width="698" height="213" key="GridCell.Tab.0.left" timestamp="1586262053634">
       <screen x="0" y="23" width="1440" height="827" />
     </state>
     <state width="1237" height="163" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1585566699925" />
-    <state width="665" height="213" key="GridCell.Tab.0.left/0.23.1440.827@0.23.1440.827" timestamp="1586085000931" />
-    <state width="665" height="213" key="GridCell.Tab.0.right" timestamp="1586085000932">
+    <state width="698" height="213" key="GridCell.Tab.0.left/0.23.1440.827@0.23.1440.827" timestamp="1586262053634" />
+    <state width="698" height="213" key="GridCell.Tab.0.right" timestamp="1586262053635">
       <screen x="0" y="23" width="1440" height="827" />
     </state>
     <state width="1237" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1585566699925" />
-    <state width="665" height="213" key="GridCell.Tab.0.right/0.23.1440.827@0.23.1440.827" timestamp="1586085000932" />
+    <state width="698" height="213" key="GridCell.Tab.0.right/0.23.1440.827@0.23.1440.827" timestamp="1586262053635" />
     <state x="534" y="154" key="RollbackChangesDialog" timestamp="1585996834372">
       <screen x="0" y="23" width="1440" height="827" />
     </state>
@@ -195,11 +245,11 @@
     </state>
     <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1585562095471" />
     <state x="160" y="23" key="SettingsEditor/0.23.1440.827@0.23.1440.827" timestamp="1586084344967" />
-    <state x="262" y="112" key="Vcs.Push.Dialog.v2" timestamp="1585997086469">
+    <state x="262" y="112" key="Vcs.Push.Dialog.v2" timestamp="1586085112210">
       <screen x="0" y="23" width="1440" height="827" />
     </state>
     <state x="233" y="73" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1585566687616" />
-    <state x="262" y="112" key="Vcs.Push.Dialog.v2/0.23.1440.827@0.23.1440.827" timestamp="1585997086469" />
+    <state x="262" y="112" key="Vcs.Push.Dialog.v2/0.23.1440.827@0.23.1440.827" timestamp="1586085112210" />
     <state x="351" y="174" width="670" height="676" key="search.everywhere.popup" timestamp="1586084329016">
       <screen x="0" y="23" width="1440" height="827" />
     </state>
