@@ -40,7 +40,7 @@
 <!--<form action ="http://localhost:8080/api/short" method="POST">-->
       <div id="shortener">
         <input id="shortener-txt" type="text" placeholder="Paste your long URL here" aria-label="LongURL">
-        <input id="shortener-btn" onclick="down()" type="submit" value="Create short URL"/>
+        <input id="shortener-btn" onclick="down();" type="submit" value="Create short URL"/>
       </div>
 <!--</form>-->
 
@@ -49,71 +49,7 @@
   <section id="sec2"><br><br>
     <div id="overview">
       <h1>Recent URLs</h1>
-      <table>
-        <tr>
-          <th>Long URL</th>
-          <th>Short URL</th>
-          <th>Timestamp</th>
-          <th></th>
-        </tr>
-        <tr>
-          <td>Test</td>
-          <td>Test</td>
-          <td>Test</td>
-          <td>
-            <button onclick="copy()">Copy</button>
-            <button onclick="delete()">Delete</button>
-          </td>
-        </tr>
-        <tr>
-          <td>Test</td>
-          <td>Test</td>
-          <td>Test</td>
-          <td>
-            <button onclick="copy()">Copy</button>
-            <button onclick="delete()">Delete</button>
-          </td>
-        </tr>
-        <tr>
-          <td>Test</td>
-          <td>Test</td>
-          <td>Test</td>
-          <td>
-            <button onclick="copy()">Copy</button>
-            <button onclick="delete()">Delete</button>
-          </td>    </tr>
-        <tr>
-          <td>Test</td>
-          <td>Test</td>
-          <td>Test</td>
-          <td>
-            <button onclick="copy()">Copy</button>
-            <button onclick="delete()">Delete</button>
-          </td>    </tr>
-        <tr>
-          <td>Test</td>
-          <td>Test</td>
-          <td>Test</td>
-          <td>
-            <button onclick="copy()">Copy</button>
-            <button onclick="delete()">Delete</button>
-          </td>    </tr>
-        <tr>
-          <td>Test</td>
-          <td>Test</td>
-          <td>Test</td>
-          <td>
-            <button onclick="copy()">Copy</button>
-            <button onclick="delete()">Delete</button>
-          </td>    </tr>
-        <tr>
-          <td>Test</td>
-          <td>Test</td>
-          <td>Test</td>
-          <td>
-            <button onclick="copy()">Copy</button>
-            <button onclick="delete()">Delete</button>
-          </td>    </tr>
+      <table id="dataTable">
       </table>
     </div>
   </section>
