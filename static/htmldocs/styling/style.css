@@ -8,8 +8,9 @@ html, body{
 
 html{
 	background: linear-gradient(60deg, #6aa8c5, #2e3c8d, #42226b, #3585cf);
+    animation: gradient 50s ease infinite;
 	background-size: 800% 800%;
-	animation: gradient 50s ease infinite;
+	scroll-behavior: smooth;
 }
 
 @keyframes gradient {
@@ -31,121 +32,139 @@ html{
     position: relative;
     margin-left:auto;
     margin-right:auto;
-
-    }
+}
 
 nav{
-position:fixed;
-top:40%;
-left:-6%;
-transition: 0.8s;
-text-align: right;
+    position:fixed;
+    top:40%;
+    left:-90px;
+    transition: 0.8s;
+    text-align: right;
+    opacity:0.8;
 }
 
 nav:hover{
-left:2%;
+    left:1%;
 }
 
-nav li{
-font-weight: bold;
+nav a{
+    font-weight: bold;
+    text-decoration:none;
 }
 
 #sec1{
-width:80%;
+    width:80%;
     padding-top: 10%;
 }
 
 
 #sec2{
-width:80%;
-padding-top:10%;
+    padding-top:3.5%;
+    width:80%;
+    text-align:center;
 }
 
 #sec3{
-width:80%;
-padding-top:10%;
+    width:80%;
+    padding-top:6%;
     margin-left:auto;
     margin-right:auto;
+    text-align:center;
 }
 
 p, a, li, th, td, h1{
     font-family:'Montserrat', sans-serif;
     font-weight: 500;
-    color: #fff;
+    color: #F2F2F2;
 }
 
+h1{
+    font-weight:bold;
+    text-decoration:underline;
+}
 
 #logo {
     width: 30%;
     margin-left: auto;
     margin-right: auto;
-    padding: 100px;
+    padding: 140px;
 }
 
 #logo img{
      width: 100%;
-     opacity: 0.8;
- }
+     opacity: 0.6;
+}
 
 #shortener {
- position: absolute;
- top: 50%;
- left: 50%;
- transform: translate(-50%, -50%);
- background: #b9b9b941;
- height: 40px;
- border-radius: 40px;
- padding: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #b9b9b941;
+    height: 40px;
+    border-radius: 40px;
+    padding: 10px;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.8);
+    opacity: 0.8;
 }
 
 #shortener:hover > #shortener-txt {
- width: 400px;
- padding: 0 6px;
+    width: 350px;
+    padding: 0 6px;
 }
 
 #shortener:hover > #shortener-btn {
- background: b9b9b941;
- color: white;
+    background: dark-grey;
+    color: #F2F2F2;
+
 }
 
 #shortener-btn {
- color: #e84118;
- float: right;
- width: 130px;
- height: 40px;
- border-radius: 20px;
- border-style: solid;
- background: #b9b9b941;
- display: flex;
- justify-content: center;
- align-items: center;
- transition: 0.8s;
- color: white;
- font-size: 1vw;
- cursor: pointer;
+    float: right;
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    border-style: solid;
+    background: #b9b9b941;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    color: #F2F2F2;
+    font-size: 1vw;
+    cursor: pointer;
+    opacity: 0.7;
+    font-weight:bold;
+    border-width:thin;
+}
+
+#shortener-btn:hover{
+    background: black;
 }
 
 #shortener-txt {
- border: none;
- background: none;
- outline: none;
- float: left;
- padding: 0;
- color: white;
- font-size: 16px;
- transition: 0.6s;
- line-height: 35px;
- width: 0px;
- font-weight: bold;
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: #F2F2F2;
+    font-size: 16px;
+    transition: 0.6s;
+    line-height: 35px;
+    width: 0px;
+    font-weight: bold;
+    opacity: 0.7;
 }
 
 #shortener-txt::placeholder{
-color: white;
+    color: #F2F2F2;
 }
 
 #overview{
     background: #b9b9b941;
-    height: 500px;
+    height: 600px;
+    max-height: 600px;
     border-radius: 40px;
     margin-top: 10px;
     padding: 20px;
@@ -153,7 +172,8 @@ color: white;
 
 #about{
     background: #b9b9b941;
-    height: 500px;
+    height: 600px;
+    max-height: 600px;
     border-radius: 40px;
     margin-top: 10px;
     padding: 20px;

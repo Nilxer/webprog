@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
 
-  <title>URL-Shortener</title>
+  <title>Shrink Your Link</title>
 
   <!-- Meta Data -->
   <meta charset="utf-8"/>
@@ -18,18 +19,15 @@
 
   <!--Custom Scripts-->
   <script src="../scripts/script.js"></script>
+
 </head>
 
 <body>
 
-  <header>
-
-  </header>
-
   <nav>
-      <a href="#sec1">NEW >></a><br><br>
-      <a href="#sec2">RECENTS >></a><br><br>
-      <a href="#sec3">ABOUT >> </a><br><br>
+    <a href="#sec1">NEW URL >></a><br><br>
+    <a href="#sec2">RECENTS >></a><br><br>
+    <a href="#sec3">ABOUT >> </a>
   </nav>
 
   <section id="sec1">
@@ -39,97 +37,94 @@
       </a>
     </div>
 
-<!--    <form action ="http://localhost:8080/api/short" method="POST">-->
-
-    <div id="shortener">
-    <input id="shortener-txt" type="text" placeholder="Paste your long URL here" aria-label="LongURL">
-    <input id="shortener-btn" onclick="godown()" type="submit" value="Shrink your Link"/>
-    </div>
-<!--    </form>-->
+<!--<form action ="http://localhost:8080/api/short" method="POST">-->
+      <div id="shortener">
+        <input id="shortener-txt" type="text" placeholder="Paste your long URL here" aria-label="LongURL">
+        <input id="shortener-btn" onclick="down()" type="submit" value="Create short URL"/>
+      </div>
+<!--</form>-->
 
   </section>
 
-  <section id="sec2">
-  <div id="overview">
-    <h1>Recently shortened URLs</h1>
-    <table>
-      <tr>
-        <th>Long URL</th>
-        <th>Short URL</th>
-        <th>Timestamp</th>
-        <th></th>
-      </tr>
-      <tr>
-        <td>Test</td>
-        <td>Test</td>
-        <td>Test</td>
-        <td>
-          <button onclick="copy()">Copy</button>
-          <button onclick="delete()">Delete</button>
-        </td>
-      </tr>
-      <tr>
-        <td>Test</td>
-        <td>Test</td>
-        <td>Test</td>
-        <td>
-          <button onclick="copy()">Copy</button>
-          <button onclick="delete()">Delete</button>
-        </td>
-      </tr>
-      <tr>
-        <td>Test</td>
-        <td>Test</td>
-        <td>Test</td>
-        <td>
-          <button onclick="copy()">Copy</button>
-          <button onclick="delete()">Delete</button>
-        </td>    </tr>
-      <tr>
-        <td>Test</td>
-        <td>Test</td>
-        <td>Test</td>
-        <td>
-          <button onclick="copy()">Copy</button>
-          <button onclick="delete()">Delete</button>
-        </td>    </tr>
-      <tr>
-        <td>Test</td>
-        <td>Test</td>
-        <td>Test</td>
-        <td>
-          <button onclick="copy()">Copy</button>
-          <button onclick="delete()">Delete</button>
-        </td>    </tr>
-      <tr>
-        <td>Test</td>
-        <td>Test</td>
-        <td>Test</td>
-        <td>
-          <button onclick="copy()">Copy</button>
-          <button onclick="delete()">Delete</button>
-        </td>    </tr>
-      <tr>
-        <td>Test</td>
-        <td>Test</td>
-        <td>Test</td>
-        <td>
-          <button onclick="copy()">Copy</button>
-          <button onclick="delete()">Delete</button>
-        </td>    </tr>
-    </table>
-  </div>
+  <section id="sec2"><br><br>
+    <div id="overview">
+      <h1>Recent URLs</h1>
+      <table>
+        <tr>
+          <th>Long URL</th>
+          <th>Short URL</th>
+          <th>Timestamp</th>
+          <th></th>
+        </tr>
+        <tr>
+          <td>Test</td>
+          <td>Test</td>
+          <td>Test</td>
+          <td>
+            <button onclick="copy()">Copy</button>
+            <button onclick="delete()">Delete</button>
+          </td>
+        </tr>
+        <tr>
+          <td>Test</td>
+          <td>Test</td>
+          <td>Test</td>
+          <td>
+            <button onclick="copy()">Copy</button>
+            <button onclick="delete()">Delete</button>
+          </td>
+        </tr>
+        <tr>
+          <td>Test</td>
+          <td>Test</td>
+          <td>Test</td>
+          <td>
+            <button onclick="copy()">Copy</button>
+            <button onclick="delete()">Delete</button>
+          </td>    </tr>
+        <tr>
+          <td>Test</td>
+          <td>Test</td>
+          <td>Test</td>
+          <td>
+            <button onclick="copy()">Copy</button>
+            <button onclick="delete()">Delete</button>
+          </td>    </tr>
+        <tr>
+          <td>Test</td>
+          <td>Test</td>
+          <td>Test</td>
+          <td>
+            <button onclick="copy()">Copy</button>
+            <button onclick="delete()">Delete</button>
+          </td>    </tr>
+        <tr>
+          <td>Test</td>
+          <td>Test</td>
+          <td>Test</td>
+          <td>
+            <button onclick="copy()">Copy</button>
+            <button onclick="delete()">Delete</button>
+          </td>    </tr>
+        <tr>
+          <td>Test</td>
+          <td>Test</td>
+          <td>Test</td>
+          <td>
+            <button onclick="copy()">Copy</button>
+            <button onclick="delete()">Delete</button>
+          </td>    </tr>
+      </table>
+    </div>
   </section>
 
   <section id="sec3">
     <div id="about">
-      <h1>About</h1>
+      <h1>About</h1><br>
       <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
     </div>
-
   </section>
 
-
-
 </body>
+
 </html>
