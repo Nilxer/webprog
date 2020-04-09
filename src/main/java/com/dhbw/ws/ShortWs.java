@@ -46,6 +46,11 @@ public class ShortWs {
     JSONObject requestBody = new JSONObject(body);
     String longUrl = requestBody.getString("longUrl");
 
+    // Checks if user added https / http in front of URL. If not, adds http.
+    if(!longUrl.contains("https://") && !longUrl.contains("http://")){
+      longUrl = "http://" + longUrl;
+    }
+
     // Generates a unique short URL
     while (!urlIsUnique) {
       shortId = RandomStringUtils.randomAlphanumeric(4);
