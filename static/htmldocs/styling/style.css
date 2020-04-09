@@ -7,8 +7,9 @@ html, body{
 }
 
 html{
-	background: linear-gradient(60deg, #6aa8c5, #2e3c8d, #42226b, #3585cf);
-    animation: gradient 50s ease infinite;
+	background: linear-gradient( #3585cf,#42226b,#2e3c8d,#6aa8c5);
+	/*   background: linear-gradient(60deg, #6aa8c5, #2e3c8d, #42226b, #3585cf);
+    animation: gradient 50s ease infinite;*/
 	background-size: 800% 800%;
 	scroll-behavior: smooth;
 }
@@ -34,22 +35,52 @@ html{
     margin-right:auto;
 }
 
-nav{
+nav {
     position:fixed;
-    top:40%;
-    left:-90px;
+    left:-220px;
     transition: 0.8s;
-    text-align: right;
+    text-align:right;
+    vertical-align: middle;
     opacity:0.8;
+    background: #b9b9b920;
+    width:150px;
+    height:100%;
+    padding: 50px;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.8);
+}
+
+#arrow{
+    position:fixed;
+    left:0;
+    top:45%;
+    width:30px;
+    transition:0.8s;
+    opacity:0.4;
+
 }
 
 nav:hover{
-    left:1%;
+    left:-110px;
+    padding-right: 25px;
+}
+
+
+nav:hover > #arrow{
+    opacity:0;
+    left:75px;
 }
 
 nav a{
+    font-size:1vw;
     font-weight: bold;
     text-decoration:none;
+}
+
+#minilogo{
+    position:relative;
+    left:15px;
+    top:-25px;
+    width:100px;
 }
 
 #sec1{
@@ -168,7 +199,10 @@ h1{
     border-radius: 40px;
     margin-top: 10px;
     padding: 20px;
-    box-shadow: 0 1px 5px rgba(0,0,0,0.8)}
+    box-shadow: 0 1px 5px rgba(0,0,0,0.8);
+
+    }
+
 
 #about{
     background: #b9b9b941;
@@ -179,17 +213,50 @@ h1{
     padding: 20px;
     box-shadow: 0 1px 5px rgba(0,0,0,0.8)}
 
-table {
+#recents {
+    text-align: left;
     border-collapse: separate;
     border-spacing: 3;
-    width: 100%;
-    overflow-y:auto;
-    min-height: 80%;
     border-radius: 40px;
+    width: 100%;
+      display:block;
+      overflow-y:auto;
+      overflow-x:hidden;
+      max-width: 100%;
+      table-layout:fixed;
+      width: 100%;
+      height:500px;
+
+
+}
+
+
+
+#copybtn, #delbtn{
+    float: right;
+    width: 80px;
+    height: 30px;
+    border-radius: 20px;
+    border-style: solid;
+    background: #b9b9b941;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #F2F2F2;
+    font-size: 1vw;
+    cursor: pointer;
+    opacity: 0.7;
+    font-weight:bold;
+    border-width:thin;
+    transition: 0.5s;
+
+}
+
+#copybtn:hover, #delbtn:hover{
+    background: black;
 }
 
 th, td{
-     text-align: left;
      padding: 8px;
      color: white;
 }
@@ -197,4 +264,7 @@ th, td{
 th{
      font-weight: bold;
 }
+
+
+
 
