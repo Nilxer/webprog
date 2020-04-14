@@ -26,6 +26,7 @@ function fetchURL(){
           .catch(console.log)
 }
 
+
 function populateTable(data){
 console.log(data);
 const table = document.getElementById("recentsbody");
@@ -44,11 +45,8 @@ Object.entries(data).map((url) => {
     let number = row.insertCell(0);
     number.innerHTML = entryNr;
     entryNr++;
-    }
-)
+    })
 }
-
-
 
 
 function deleteUrl(obj){
@@ -66,21 +64,15 @@ function deleteUrl(obj){
               .catch(console.log)
 }
 
+
 function copyButton(tocopy){
-   // Temporäres Element erzeugen
       var tmp = document.createElement('textarea');
-      // Den zu kopierenden String dem Element zuweisen
       tmp.value = tocopy;
-      // Element nicht editierbar setzen und aus dem Fenster schieben
       tmp.setAttribute('readonly', '');
       tmp.style = {position: 'absolute', left: '-9999px'};
       document.body.appendChild(tmp);
-      // Text innerhalb des Elements auswählen
       tmp.select();
-      // Ausgewählten Text in die Zwischenablage kopieren
       document.execCommand('copy');
-      // Temporäres Element löschen
       document.body.removeChild(tmp);
       alert("Copied to Clipboard!");
-
-   }
+}

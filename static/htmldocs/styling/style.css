@@ -1,9 +1,8 @@
 html, body{
     margin: 0;
     padding: 0;
-    min-height: 100%;
     height: 100%;
-    width: 100%
+    width: 100%;
 }
 
 html{
@@ -26,13 +25,37 @@ html{
 	}
 }
 
+p, a, li, th, td, h1{
+    font-family:'Montserrat', sans-serif;
+    font-weight: 500;
+    color: #F2F2F2;
+         font-size:1.2vw;
 
- section{
+}
+
+h1{
+    font-weight:bold;
+    text-decoration:underline;
+}
+
+th, td{
+     padding: 8px;
+     color: white;
+}
+
+th{
+     font-weight: bold;
+}
+
+section{
+    position:relative;
+    padding-top: 5%;
     min-height:100%;
-    padding:0;
-    position: relative;
+    max-height:100%;
     margin-left:auto;
     margin-right:auto;
+    width:80%;
+    text-align:center;
 }
 
 nav {
@@ -49,21 +72,10 @@ nav {
     box-shadow: 0 1px 5px rgba(0,0,0,0.8);
 }
 
-#arrow{
-    position:fixed;
-    left:0;
-    top:45%;
-    width:30px;
-    transition:0.8s;
-    opacity:0.4;
-
-}
-
 nav:hover{
     left:-110px;
     padding-right: 25px;
 }
-
 
 nav:hover > #arrow{
     opacity:0;
@@ -76,49 +88,30 @@ nav a{
     text-decoration:none;
 }
 
+#arrow{
+    position:fixed;
+    left:0;
+    top:45%;
+    width:2vw;
+    transition:0.8s;
+    opacity:0.4;
+}
+
 #minilogo{
     position:relative;
     left:15px;
     top:-25px;
-    width:100px;
+    width:7vw;
 }
 
-#sec1{
-    width:80%;
-    padding-top: 10%;
-}
-
-
-#sec2{
-    padding-top:3.5%;
-    width:80%;
-    text-align:center;
-}
-
-#sec3{
-    width:80%;
-    padding-top:6%;
-    margin-left:auto;
-    margin-right:auto;
-    text-align:center;
-}
-
-p, a, li, th, td, h1{
-    font-family:'Montserrat', sans-serif;
-    font-weight: 500;
-    color: #F2F2F2;
-}
-
-h1{
-    font-weight:bold;
-    text-decoration:underline;
-}
-
-#logo {
+#logo{
+    position:absolute;
+    top: 30%;
+    left: 35%;
     width: 30%;
     margin-left: auto;
     margin-right: auto;
-    padding: 140px;
+
 }
 
 #logo img{
@@ -126,34 +119,23 @@ h1{
      opacity: 0.6;
 }
 
-#shortener {
-    position: absolute;
+#shortener{
+    position:absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     background: #b9b9b941;
-    height: 40px;
+    height: 3vw;
     border-radius: 40px;
     padding: 10px;
     box-shadow: 0 1px 5px rgba(0,0,0,0.8);
     opacity: 0.8;
 }
 
-#shortener:hover > #shortener-txt {
-    width: 350px;
-    padding: 0 6px;
-}
-
-#shortener:hover > #shortener-btn {
-    background: dark-grey;
-    color: #F2F2F2;
-
-}
-
-#shortener-btn {
+#shortener-btn{
     float: right;
-    width: 150px;
-    height: 40px;
+    width: 10vw;
+    height: 3vw;
     border-radius: 20px;
     border-style: solid;
     background: #b9b9b941;
@@ -169,21 +151,16 @@ h1{
     border-width:thin;
 }
 
-#shortener-btn:hover{
-    background: black;
-}
-
-#shortener-txt {
+#shortener-txt{
     border: none;
     background: none;
     outline: none;
     float: left;
-    padding: 0;
     color: #F2F2F2;
-    font-size: 16px;
+    font-size: 1vw;
     transition: 0.6s;
-    line-height: 35px;
-    width: 0px;
+    line-height: 2.5vw;
+    width: 0;
     font-weight: bold;
     opacity: 0.7;
 }
@@ -192,50 +169,54 @@ h1{
     color: #F2F2F2;
 }
 
+#shortener:hover > #shortener-txt{
+    width: 25vw;
+}
+
+#shortener:hover > #shortener-btn{
+    background: dark-grey;
+    color: #F2F2F2;
+}
+
+#shortener-btn:hover{
+    background: black;
+}
+
 #overview{
     background: #b9b9b941;
-    height: 600px;
-    max-height: 600px;
+    height: 45vw;
+    max-height: 45vw;
     border-radius: 40px;
-    margin-top: 10px;
     padding: 20px;
     box-shadow: 0 1px 5px rgba(0,0,0,0.8);
-
-    }
+}
 
 
 #about{
     background: #b9b9b941;
-    height: 600px;
-    max-height: 600px;
+    height: 45vw;
+    max-height: 45vw;
     border-radius: 40px;
-    margin-top: 10px;
     padding: 20px;
-    box-shadow: 0 1px 5px rgba(0,0,0,0.8)}
+    box-shadow: 0 1px 5px rgba(0,0,0,0.8)
+}
 
-#recents {
+#recents{
+    height: 40vw;
+    max-height: 40vw;
     text-align: left;
     border-collapse: separate;
     border-spacing: 3;
     border-radius: 40px;
-    width: 100%;
-      display:block;
-      overflow-y:auto;
-      overflow-x:hidden;
-      max-width: 100%;
-      table-layout:fixed;
-      width: 100%;
-      height:500px;
-
-
+    display:block;
+    overflow-y:scroll;
+    table-layout:fixed;
 }
-
-
 
 #copybtn, #delbtn{
     float: right;
-    width: 80px;
-    height: 30px;
+    width: 5vw;
+    height: 2.5vw;
     border-radius: 20px;
     border-style: solid;
     background: #b9b9b941;
@@ -249,20 +230,10 @@ h1{
     font-weight:bold;
     border-width:thin;
     transition: 0.5s;
-
 }
 
 #copybtn:hover, #delbtn:hover{
     background: black;
-}
-
-th, td{
-     padding: 8px;
-     color: white;
-}
-
-th{
-     font-weight: bold;
 }
 
 

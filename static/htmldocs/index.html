@@ -39,26 +39,32 @@
       </a>
     </div>
 
-<!--<form action ="http://localhost:8080/api/short" method="POST">-->
+<form>
       <div id="shortener">
         <input id="shortener-txt" type="text" placeholder="Paste your long URL here" aria-label="LongURL">
         <input id="shortener-btn" onclick="shorten()" type="submit" value="Create short URL"/>
       </div>
-<!--</form>-->
+</form>
 
   </section>
 
-  <section id="sec2"><br><br>
+  <section id="sec2">
     <div id="overview">
       <h1>Recent URLs</h1>
       <table id="recents">
         <colgroup>
           <col style="width:3%">
           <col style="width:35%">
-          <col style="width:52%">
-          <col style="width:10%">
+          <col style="width:55%">
+          <col style="width:7%">
         </colgroup>
-        <thead>
+        <thead id="recentshead">
+          <tr>
+            <th>#</th>
+            <th>Short URL</th>
+            <th>Long URL</th>
+            <th>Actions</th>
+          </tr>
         </thead>
         <tbody id="recentsbody">
         </tbody>

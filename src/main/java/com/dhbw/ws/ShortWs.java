@@ -9,20 +9,21 @@ import javax.ws.rs.core.Response;
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 
 @Path("/")
 @Produces(MediaType.APPLICATION_JSON)
 public class ShortWs {
 
   // Hashmap to store all URLs
-  private HashMap<String, String> urlMapping;
+  private LinkedHashMap<String, String> urlMapping;
 
   // Base URL for all short URLs
   String baseUrl = "http://localhost:8080/api/short/";
 
   public ShortWs() {
     System.out.println("Registered ShortWs");
-    urlMapping = new HashMap<String, String>();
+    urlMapping = new LinkedHashMap<String, String>();
   }
 
   // Creates short URL for a given long URL
@@ -30,7 +31,7 @@ public class ShortWs {
   @Path("/short")
   public Response createShortUrl(String body) {
     boolean urlIsUnique = false;
-    String shortId = "";
+    String shortId;
     String shortUrl = "";
 
     // Gets long URL from request
@@ -38,7 +39,7 @@ public class ShortWs {
     String longUrl = requestBody.getString("longUrl");
 
     // Checks if user added https / http in front of URL. If not, adds http.
-    if(!longUrl.contains("https://") && !longUrl.contains("http://")){
+    if(!longUrl.toUpperCase().startsWith("HTTPS://") && !longUrl.toUpperCase().startsWith("HTTP://")){
       longUrl = "http://" + longUrl;
     }
 
