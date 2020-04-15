@@ -211,6 +211,7 @@ nav a{
     display:block;
     overflow-y:scroll;
     table-layout:fixed;
+
 }
 
 #copybtn, #delbtn{

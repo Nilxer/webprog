@@ -1,6 +1,8 @@
 package com.dhbw.ws;
 
+import com.google.gson.Gson;
 import org.apache.commons.lang3.RandomStringUtils;
+import org.json.JSONArray;
 import org.json.JSONObject;
 
 import javax.ws.rs.*;
@@ -64,8 +66,10 @@ public class ShortWs {
   @GET
   @Path("/short")
   public Response getAllUrls() {
-    JSONObject response = new JSONObject(urlMapping);
-    return Response.ok().entity(response.toString()).type(MediaType.APPLICATION_JSON).build();
+
+    Gson gson = new Gson();
+    String response = gson.toJson(urlMapping,LinkedHashMap.class);
+    return Response.ok().entity(response).type(MediaType.APPLICATION_JSON).build();
   }
 
   // Redirects to long URL for a given short URL

@@ -1,20 +1,29 @@
 function shorten(){
- window.location = '#sec2';
+    let message = document.getElementById("shortener-txt").value
 
-      let input = '{'
-          +'"longUrl" : "'+document.getElementById("shortener-txt").value+'"'
-      +'}';
+    if(message == ""){
+        alert("You have to link a valid website!")
+    }
 
-      fetch('http://localhost:8080/api/short/', {
+    else {
+        window.location = '#sec2';
+
+        let input = '{'
+            + '"longUrl" : "' + message + '"'
+            + '}';
+
+        fetch('http://localhost:8080/api/short/', {
             method: 'POST',
             headers: {
-                  'Accept': 'application/json',
-                  'Content-Type': 'application/json',
+                'Accept': 'application/json',
+                'Content-Type': 'application/json',
             },
             body: input
-      }).then((data) => {
-          fetchURL()})
-          .catch(console.log)
+        }).then((data) => {
+            fetchURL()
+        })
+            .catch(console.log)
+    }
 }
 
 
@@ -28,11 +37,10 @@ function fetchURL(){
 
 
 function populateTable(data){
-console.log(data);
 const table = document.getElementById("recentsbody");
 table.innerHTML="";
 let entryNr = 1;
-Object.entries(data).map((url) => {
+Object.entries(data).reverse().map((url) => {
     let row = table.insertRow();
     let delbtn = row.insertCell(0);
     delbtn.innerHTML = "<button type='submit' id=delbtn value="+url[0]+" onclick='deleteUrl(this)'>Delete</button>";
