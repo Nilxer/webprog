@@ -6,45 +6,24 @@ html, body{
 }
 
 html{
-	background: linear-gradient( #3585cf,#42226b,#2e3c8d,#6aa8c5);
-	/*   background: linear-gradient(60deg, #6aa8c5, #2e3c8d, #42226b, #3585cf);
-    animation: gradient 50s ease infinite;*/
+	background: linear-gradient( #4167cf,#42226b,#2e3c8d,#4167cf);
 	background-size: 800% 800%;
 	scroll-behavior: smooth;
 }
 
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
-}
-
-p, a, li, th, td, h1{
+p, div, a, li, th, td, h1, h2, h3{
     font-family:'Montserrat', sans-serif;
     font-weight: 500;
     color: #F2F2F2;
-         font-size:1.2vw;
-
+    font-size:1.2vw;
 }
 
 h1{
     font-weight:bold;
     text-decoration:underline;
-}
-
-th, td{
-     padding: 8px;
-     color: white;
-}
-
-th{
-     font-weight: bold;
+    font-size:1.8vw;
+    text-shadow: 1px 0px 5px rgba(0,0,0,0.4);
+    text-align:center;
 }
 
 section{
@@ -55,7 +34,6 @@ section{
     margin-left:auto;
     margin-right:auto;
     width:80%;
-    text-align:center;
 }
 
 nav {
@@ -72,23 +50,7 @@ nav {
     box-shadow: 0 1px 5px rgba(0,0,0,0.8);
 }
 
-nav:hover{
-    left:-110px;
-    padding-right: 25px;
-}
-
-nav:hover > #arrow{
-    opacity:0;
-    left:75px;
-}
-
-nav a{
-    font-size:1vw;
-    font-weight: bold;
-    text-decoration:none;
-}
-
-#arrow{
+#navbar-arrow{
     position:fixed;
     left:0;
     top:45%;
@@ -97,31 +59,48 @@ nav a{
     opacity:0.4;
 }
 
-#minilogo{
+nav:hover > #navbar-arrow{
+    opacity:0;
+    left:75px;
+}
+
+nav:hover{
+    left:-110px;
+    padding-right: 25px;
+}
+
+nav a{
+    font-size:1vw;
+    font-weight: bold;
+    text-decoration:none;
+}
+
+
+
+#navbar-logo{
     position:relative;
     left:15px;
     top:-25px;
     width:7vw;
 }
 
-#logo{
+#main-logo{
     position:absolute;
     top: 30%;
     left: 35%;
     width: 30%;
     margin-left: auto;
     margin-right: auto;
-
 }
 
-#logo img{
+#main-logo img{
      width: 100%;
      opacity: 0.6;
 }
 
-#shortener{
+#div-shortener{
     position:absolute;
-    top: 50%;
+    top: 51%;
     left: 50%;
     transform: translate(-50%, -50%);
     background: #b9b9b941;
@@ -132,7 +111,7 @@ nav a{
     opacity: 0.8;
 }
 
-#shortener-btn{
+#shortener-button{
     float: right;
     width: 10vw;
     height: 3vw;
@@ -151,7 +130,7 @@ nav a{
     border-width:thin;
 }
 
-#shortener-txt{
+#shortener-text{
     border: none;
     background: none;
     outline: none;
@@ -165,24 +144,24 @@ nav a{
     opacity: 0.7;
 }
 
-#shortener-txt::placeholder{
+#shortener-text::placeholder{
     color: #F2F2F2;
 }
 
-#shortener:hover > #shortener-txt{
+#div-shortener:hover > #shortener-text{
     width: 25vw;
 }
 
-#shortener:hover > #shortener-btn{
+#div-shortener:hover > #shortener-button{
     background: dark-grey;
     color: #F2F2F2;
 }
 
-#shortener-btn:hover{
+#shortener-button:hover{
     background: black;
 }
 
-#overview{
+#div-recents{
     background: #b9b9b941;
     height: 45vw;
     max-height: 45vw;
@@ -191,31 +170,48 @@ nav a{
     box-shadow: 0 1px 5px rgba(0,0,0,0.8);
 }
 
-
-#about{
-    background: #b9b9b941;
-    height: 45vw;
-    max-height: 45vw;
-    border-radius: 40px;
-    padding: 20px;
-    box-shadow: 0 1px 5px rgba(0,0,0,0.8)
-}
-
-#recents{
+#tab-recents{
     height: 40vw;
     max-height: 40vw;
     text-align: left;
     border-collapse: separate;
     border-spacing: 3;
-    border-radius: 40px;
     display:block;
-    overflow-y:scroll;
+    overflow:auto;
     table-layout:fixed;
-
 }
 
-#copybtn, #delbtn{
-    float: right;
+#tab-recents th {
+  background:#6060A5;
+  font-weight: bold;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+th, td{
+    padding:10px;
+    color: white;
+    overflow: hidden;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+    max-width:100px;
+}
+
+#col1{
+    width:27vw;
+}
+
+#col2{
+    width:35vw;
+}
+
+#col3{
+    width:15vw;
+}
+
+#actionbutton{
+    float: left;
     width: 5vw;
     height: 2.5vw;
     border-radius: 20px;
@@ -231,12 +227,29 @@ nav a{
     font-weight:bold;
     border-width:thin;
     transition: 0.5s;
+    margin-right:1vw;
 }
 
-#copybtn:hover, #delbtn:hover{
+#actionbutton:hover{
     background: black;
 }
 
+#div-about{
+    background: #b9b9b941;
+    height: 45vw;
+    max-height: 45vw;
+    border-radius: 40px;
+    padding: 20px;
+    padding-right:50px;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.8);
+    text-align:justify;
+}
 
-
-
+#about-logo{
+    width: 25vw;
+    height:28vw;
+    padding:4.5vw;
+    padding-top:1vw;
+    padding-bottom:15vw;
+    float:left;
+}
