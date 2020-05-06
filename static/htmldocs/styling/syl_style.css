@@ -12,81 +12,85 @@ html{
 }
 
 p, div, a, li, th, td, h1, h2, h3{
-    font-family:'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     color: #F2F2F2;
-    font-size:1.2vw;
+    font-size: 1.2vw;
 }
 
 h1{
-    font-weight:bold;
-    text-decoration:underline;
-    font-size:1.8vw;
+    font-weight: 700;
+    text-decoration: underline;
+    font-size: 1.8vw;
     text-shadow: 1px 0px 5px rgba(0,0,0,0.4);
-    text-align:center;
+    text-align: center;
 }
 
 section{
-    position:relative;
+    position: relative;
     padding-top: 5%;
-    min-height:100%;
-    max-height:100%;
-    margin-left:auto;
-    margin-right:auto;
-    width:80%;
+    min-height: 100%;
+    max-height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
 }
+
+
+
 
 nav {
     position:fixed;
-    left:-220px;
+    left: -220px;
     transition: 0.8s;
-    text-align:right;
+    text-align: right;
     vertical-align: middle;
-    opacity:0.8;
+    opacity: 0.8;
     background: #b9b9b920;
-    width:150px;
-    height:100%;
+    width: 150px;
+    height: 100%;
     padding: 50px;
     box-shadow: 0 1px 5px rgba(0,0,0,0.8);
 }
 
 #navbar-arrow{
-    position:fixed;
-    left:0;
-    top:45%;
-    width:2vw;
-    transition:0.8s;
-    opacity:0.4;
+    position: fixed;
+    left: 0;
+    top: 45%;
+    width: 2vw;
+    transition: 0.8s;
+    opacity: 0.4;
 }
 
 nav:hover > #navbar-arrow{
-    opacity:0;
-    left:75px;
+    opacity: 0;
+    left: 75px;
 }
 
 nav:hover{
-    left:-110px;
+    left: -110px;
     padding-right: 25px;
 }
 
 nav a{
-    font-size:1vw;
-    font-weight: bold;
-    text-decoration:none;
+    font-size: 1vw;
+    font-weight: 700;
+    text-decoration: none;
 }
-
-
 
 #navbar-logo{
-    position:relative;
-    left:15px;
-    top:-25px;
-    width:7vw;
+    position: relative;
+    left: 15px;
+    top: -25px;
+    width: 7vw;
 }
 
+
+
+
 #main-logo{
-    position:absolute;
-    top: 30%;
+    position: absolute;
+    top: 27%;
     left: 35%;
     width: 30%;
     margin-left: auto;
@@ -99,11 +103,11 @@ nav a{
 }
 
 #div-shortener{
-    position:absolute;
-    top: 51%;
+    position: absolute;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: #b9b9b941;
+    background: #b9b9b940;
     height: 3vw;
     border-radius: 40px;
     padding: 10px;
@@ -117,7 +121,7 @@ nav a{
     height: 3vw;
     border-radius: 20px;
     border-style: solid;
-    background: #b9b9b941;
+    background: #b9b9b940;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -126,8 +130,8 @@ nav a{
     font-size: 1vw;
     cursor: pointer;
     opacity: 0.7;
-    font-weight:bold;
-    border-width:thin;
+    font-weight: 700;
+    border-width: thin;
 }
 
 #shortener-text{
@@ -140,7 +144,7 @@ nav a{
     transition: 0.6s;
     line-height: 2.5vw;
     width: 0;
-    font-weight: bold;
+    font-weight: 700;
     opacity: 0.7;
 }
 
@@ -153,16 +157,18 @@ nav a{
 }
 
 #div-shortener:hover > #shortener-button{
-    background: dark-grey;
     color: #F2F2F2;
 }
 
 #shortener-button:hover{
-    background: black;
+    background: #242499;
 }
 
+
+
+
 #div-recents{
-    background: #b9b9b941;
+    background: #b9b9b940;
     height: 45vw;
     max-height: 45vw;
     border-radius: 40px;
@@ -175,39 +181,38 @@ nav a{
     max-height: 40vw;
     text-align: left;
     border-collapse: separate;
-    border-spacing: 3;
-    display:block;
-    overflow:auto;
-    table-layout:fixed;
+    display: block;
+    overflow: auto;
+    table-layout: fixed;
 }
 
 #tab-recents th {
-  background:#6060A5;
-  font-weight: bold;
-  position: sticky;
-  top: 0;
-  z-index: 2;
+    background: #6060A9;
+    font-weight: 700;
+    position: sticky;
+    top: 0;
+    z-index: 2;
 }
 
-th, td{
-    padding:10px;
-    color: white;
+#tab-recents th, td{
+    padding: 10px;
+    color: #fff;
     overflow: hidden;
-    white-space:nowrap;
-    text-overflow:ellipsis;
-    max-width:100px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 100px;
 }
 
 #col1{
-    width:27vw;
+    width: 27vw;
 }
 
 #col2{
-    width:35vw;
+    width: 35vw;
 }
 
 #col3{
-    width:15vw;
+    width: 15vw;
 }
 
 #actionbutton{
@@ -216,7 +221,7 @@ th, td{
     height: 2.5vw;
     border-radius: 20px;
     border-style: solid;
-    background: #b9b9b941;
+    background: #b9b9b940;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -224,32 +229,35 @@ th, td{
     font-size: 1vw;
     cursor: pointer;
     opacity: 0.7;
-    font-weight:bold;
-    border-width:thin;
+    font-weight: 700;
+    border-width: thin;
     transition: 0.5s;
-    margin-right:1vw;
+    margin-right: 1vw;
 }
 
 #actionbutton:hover{
-    background: black;
+    background: #242499;
 }
 
+
+
+
 #div-about{
-    background: #b9b9b941;
+    background: #b9b9b940;
     height: 45vw;
     max-height: 45vw;
     border-radius: 40px;
     padding: 20px;
-    padding-right:50px;
+    padding-right: 50px;
     box-shadow: 0 1px 5px rgba(0,0,0,0.8);
-    text-align:justify;
+    text-align: justify;
 }
 
 #about-logo{
     width: 25vw;
-    height:28vw;
-    padding:4.5vw;
-    padding-top:1vw;
-    padding-bottom:15vw;
-    float:left;
+    height: 28vw;
+    padding: 4.5vw;
+    padding-top: 1vw;
+    padding-bottom: 15vw;
+    float: left;
 }

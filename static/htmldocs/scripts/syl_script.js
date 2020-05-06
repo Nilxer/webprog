@@ -1,6 +1,6 @@
 function submitURL(){
-    //Retrieves the long URL from the input, generate JSON structure and reset input
-    let message = document.getElementById("shortener-text").value
+    //Retrieve the long URL from the input, trim ends, generate JSON structure and reset input
+    let message = document.getElementById("shortener-text").value.trim()
     let input = '{' + '"longUrl" : "' + message + '"' + '}';
     document.getElementById('shortener-text').value='';
 
@@ -14,6 +14,13 @@ function submitURL(){
     //Check for empty input
     if(message == ""){
         alert("You can't shorten an empty URL!");
+        window.location = '#new';
+        return false;
+    }
+
+    //Check for blanks within the URL
+    if(message.includes(" ")){
+        alert("Your URL seems to contain blanks!");
         window.location = '#new';
         return false;
     }

@@ -2,22 +2,30 @@
 <html lang="de">
 
 <head>
+
   <title>Shrink Your Link</title>
+
   <!-- Meta Data -->
   <meta charset="utf-8"/>
-  <meta content="URL-Shortening Service" name="description"/>
-  <meta content="Philipp B., David D., Mika H., Alina V." name="author"/>
+  <meta content="Student Project: URL-Shortening Service" name="description"/>
+  <meta content="Philipp Bohlen, David Drexlin, Mika Heiringhoff, Alina Vretinaris" name="author"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
   <!-- Custom Style Sheet -->
-  <link rel="stylesheet" type="text/css" href="../styling/style.css">
+  <link rel="stylesheet" type="text/css" href="../styling/syl_style.css">
+
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"/>
+
   <!--Custom Scripts-->
-  <script src="../scripts/script.js"></script>
+  <script src="../scripts/syl_script.js"></script>
+
 </head>
+
 
 <body onload="fetchURL()">
 
+  <!--Expandable navigation sidebar with logo links to each section-->
   <nav>
     <a href="#"><img id="navbar-logo" src="../img/logo.png" alt="SYL-Logo"><br><br></a>
     <a href="#new">NEW URL</a><br><br>
@@ -26,13 +34,14 @@
     <img id="navbar-arrow" src="../img/menuarrow.png" alt="Navbar-Arrow">
   </nav>
 
+  <!--Section 1 with logo, long-URL input field and button to submit form-->
   <section id="new">
-
     <div id="main-logo">
       <a href="#">
         <img src="../img/logo.png" alt="SYL-Logo">
       </a>
     </div>
+
     <form>
           <div id="div-shortener">
             <input id="shortener-text" type="text" placeholder="Paste your long URL here" aria-label="LongURL">
@@ -41,6 +50,7 @@
     </form>
   </section>
 
+  <!--Section 2 with overview of recently shortened URLs and options to delete or copy short URL to clipboard-->
   <section id="recents">
     <div id="div-recents">
       <h1>RECENT SHORT URLs</h1>
@@ -63,6 +73,7 @@
     </div>
   </section>
 
+  <!--Section 3 with logos of SYL and DHBW, details on the project, team and contacts-->
   <section id="about">
     <div id="div-about">
       <h1>ABOUT</h1>
@@ -72,8 +83,8 @@
       <p> The website "Shrink your Link" was created as part of a student project for "Web Programming"
           class (WWI2018EI) at the Cooperative State University Baden-Wuerttemberg (DHBW) in Stuttgart.</p>
       <p> The project objective was to create a web service which shortens a URL provided by the user.
-          Additionally, the service offers a list of previously shortened URls, the corresponding original
-          URls as well as options to copy or remove the short URls.</p>
+          Additionally, the service offers a list of previously shortened URLs, the corresponding original
+          URLs as well as options to copy or remove the short URLs.</p>
       <p> In accordance with the simplicity of this service, the user interface has also been kept in a
           simple yet modern and sleek design using plain HTML+CSS.</p>
 
